@@ -46,7 +46,7 @@
                                                     <th>Address</th>
                                                     <th>Image</th>
                                                     <th>Country</th>
-                                                    <th>City</th>
+                                                    <th>Image Gallery</th>
                                                     <th>Status</th>
                                                     <th></th>
                                                     <th></th>
@@ -66,10 +66,11 @@
                                                     @endif
                                                     </td>
                                                     <td>{{ $rs->country }}</td>
-                                                    <td>{{ $rs->city }}</td>
+                                                    <td><a href="{{route('admin_image_add',['hotel_id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"><img
+                                                                src="{{asset('assets/admin/images')}}/galleryicon.png" height="35"></a></td>
                                                     <td>{{ $rs->status }}</td>
-                                                    <td><a href="{{route('admin_hotel_edit',['id'=> $rs->id])}}"> <ion-icon name="create-outline"></ion-icon> Edit</a></td>
-                                                    <td><a href="{{route('admin_hotel_delete',['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure ?')"> Delete</a></td>
+                                                    <td><a href="{{route('admin_hotel_edit',['id'=> $rs->id])}}"> <ion-icon name="create-outline"></ion-icon> <img src="{{asset('assets/admin/images')}}/editicon.png" height="40"></a></td>
+                                                    <td><a href="{{route('admin_hotel_delete',['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure ?')"> <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a></td>
                                                 </tr>
 
                                                 @endforeach
