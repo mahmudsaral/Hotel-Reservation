@@ -1,0 +1,322 @@
+@extends('layouts.admin')
+@section('title','Admin Panel Home Page')
+
+@section('javascript')
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+
+@endsection
+
+
+@section('content')
+
+    <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="row page-titles">
+
+                <div class="col-md-7 align-self-center text-right">
+
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Start Page Content -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+
+                                        <div class="card-body">
+                                            <form action="{{route('admin_setting_update')}}" method="post" accept-charset="" enctype="multipart/form-data">
+                                                @csrf
+                                                <div class="form-body">
+                                                    <h3 class="card-title">Setting Edit</h3>
+                                                    <input type="hidden" name="id" value="{{$data->id}}" class="form-control">
+                                                    <div class="row p-t-20">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group has-success">
+                                                                <label class="control-label">Title</label>
+                                                                <input type="text" id="title" name ="title" value="{{$data->title}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Keywords</label>
+                                                                <input type="text" id="keywords" name ="keywords" value="{{$data->keywords}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Description</label>
+                                                                <input type="text"  name ="description" value="{{$data->description}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Company</label>
+                                                                <input type="text"  name ="company" value="{{$data->company}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+
+                                                    <!--/row-->
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Adress</label>
+                                                                <input type="text"  name ="adress" value="{{$data->adress}}"  class="form-control">
+
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Phone</label>
+                                                                <input type="text"  name ="phone" value="{{$data->phone}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Fax</label>
+                                                                <input type="text"  name ="fax" value="{{$data->fax}}" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Email</label>
+                                                                <input type="text"  name ="email" value="{{$data->email}}" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Smtpserver</label>
+                                                                <input type="text"  name ="smtpserver" value="{{$data->smtpserver}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Smtpemail</label>
+                                                                <input type="text"  name ="smtpemail" value="{{$data->smtpemail}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Smtppasword</label>
+                                                                <input type="text"  name ="smtppasword" value="{{$data->smtppasword}}" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Smtpport</label>
+                                                                <input type="text"  name ="smtpport" value="{{$data->smtpport}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Facebook</label>
+                                                                <input type="text"  name ="facebook"  value="{{$data->facebook}}"  class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Instagram</label>
+                                                                <input type="text"  name ="instagram" value="{{$data->instagram}}" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <!--/span-->
+                                                    </div>
+                                                    <!--/row-->
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Twitter</label>
+                                                                <input type="text"  name ="twitter" value="{{$data->twitter}}" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Youtube</label>
+                                                                <input type="text"  name ="youtube" value="{{$data->youtube}}" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <label class="control-label">About us</label>
+                                                        <textarea id="aboutus" name="aboutus">{{$data->aboutus}}</textarea>
+                                                        <script>
+                                                            $(document).ready(function () {
+                                                                $('#aboutus').summernote();
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Contact</label>
+                                                        <textarea id="contact" name="contact">{{$data->contact}}</textarea>
+                                                        <script>
+                                                            $(document).ready(function () {
+                                                                $('#contact').summernote();
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">References</label>
+                                                        <textarea id="references" name="references">{{$data->references}}</textarea>
+                                                        <script>
+                                                            $(document).ready(function () {
+                                                                $('#references').summernote();
+                                                            });
+                                                        </script>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label>Status</label>
+                                                            <select class="select2 form-control custom-select" name="status"
+                                                                    style="width: 100%; height:36px;">
+                                                                <option selected="selected">{{$data->status}}</option>
+                                                                <option>False</option>
+                                                                <option>True</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                </div>
+
+
+                                                <div class="form-actions">
+                                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Edit Hotel</button>
+                                                    <button type="submit" class="btn btn-inverse">Cancel</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End PAge Content -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Right sidebar -->
+            <!-- ============================================================== -->
+            <!-- .right-sidebar -->
+            <div class="right-sidebar">
+                <div class="slimscrollright">
+                    <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                    <div class="r-panel-body">
+                        <ul id="themecolors" class="m-t-20">
+                            <li><b>With Light sidebar</b></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-default" class="default-theme">1</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-green" class="green-theme">2</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-red" class="red-theme">3</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-blue" class="blue-theme working">4</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-purple" class="purple-theme">5</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-megna" class="megna-theme">6</a></li>
+                            <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-default-dark" class="default-dark-theme ">7</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-green-dark" class="green-dark-theme">8</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-red-dark" class="red-dark-theme">9</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-blue-dark" class="blue-dark-theme">10</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-purple-dark" class="purple-dark-theme">11</a></li>
+                            <li><a href="javascript:void(0)" data-skin="skin-megna-dark" class="megna-dark-theme ">12</a></li>
+                        </ul>
+                        <ul class="m-t-20 chatonline">
+                            <li><b>Chat option</b></li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right sidebar -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Container fluid  -->
+        <!-- ============================================================== -->
+    </div>
+
+
+
+@endsection
+
+
+

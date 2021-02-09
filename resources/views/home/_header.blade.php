@@ -1,37 +1,74 @@
-<header class="site-header js-site-header">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="index.html">Sogo Hotel</a></div>
-            <div class="col-6 col-lg-8">
-
-
-                <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+<!-- Start Header -->
+<header class="header">
+    @section('footerjs')
+        @livewireScripts
+    @endsection
+    <!-- Topbar -->
+    <div class="topbar bg-custom-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="left-side">
+                        <ul class="custom-flex">
+                            <li>
+                                <a href="#" class="text-custom-white">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-custom-white">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-custom-white">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-custom-white">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- END menu-toggle -->
+                <div class="col-sm-6">
+                    <div class="right-side">
 
-                <div class="site-navbar js-site-navbar">
-                    <nav role="navigation">
-                        <div class="container">
-                            <div class="row full-height align-items-center">
-                                <div class="col-md-6 mx-auto">
-                                    <ul class="list-unstyled menu">
-                                        <li class="active"><a href="index.html">Home</a></li>
-                                        <li><a href="rooms.html">Rooms</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="events.html">Events</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="reservation.html">Reservation</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+                        <ul class="custom-flex">
+
+                            <li class="nav-item dropdown u-pro">
+                                @auth
+                                    <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="hidden-md-down"></span> {{Auth::user()->name}}</a>
+                                    <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                        <!-- text-->
+
+                                @endauth
+                                        @guest
+                                            <a href="/login" class="dropdown-item">Login</a>
+                                            <a href="/register" class="dropdown-item">Signup</a>
+                                        @endguest
+
+                                        <ul class="custom-flex">
+                                            <a href="{{route('myprofile')}}" ><i class="ti-settings"></i> Account Setting</a>
+                                            <a href="{{route('logout')}}"><i class="fa fa-power-off"></i> Logout</a>
+                                            <a href="{{route('myreviews')}}"><i class="fa fa-power-off"></i> My Reviews</a>
+                                            <a href="{{route('user_hotels')}}"><i class="fa fa-power-off"></i> My Hotels</a>
+
+                                        </ul>
+
+
+                                    </div>
+
+                            </li>
+
+                        </ul>
+
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<!-- END head -->

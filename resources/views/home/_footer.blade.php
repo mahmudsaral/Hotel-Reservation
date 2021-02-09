@@ -1,70 +1,158 @@
-<footer class="section footer-section">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-3 mb-5">
-                <ul class="list-unstyled link">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Rooms</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 mb-5">
-                <ul class="list-unstyled link">
-                    <li><a href="#">The Rooms &amp; Suites</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Restaurant</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 mb-5 pr-md-5 contact-info">
-                <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-                <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Address:</span> <span> 198 West 21th Street, <br> Suite 721 New York NY 10016</span></p>
-                <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Phone:</span> <span> (+1) 435 3533</span></p>
-                <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> info@domain.com</span></p>
-            </div>
-            <div class="col-md-3 mb-5">
-                <p>Sign up for our newsletter</p>
-                <form action="#" class="footer-newsletter">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email...">
-                        <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row pt-5">
-            <p class="col-md-6 text-left">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+@php
+    $setting = \App\Http\Controllers\HomeController::getSetting()
+@endphp
 
-            <p class="col-md-6 text-right social">
-                <a href="#"><span class="fa fa-tripadvisor"></span></a>
-                <a href="#"><span class="fa fa-facebook"></span></a>
-                <a href="#"><span class="fa fa-twitter"></span></a>
-                <a href="#"><span class="fa fa-linkedin"></span></a>
-                <a href="#"><span class="fa fa-vimeo"></span></a>
-            </p>
+<footer class="section-padding footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-md-40">
+                    <h4 class="text-custom-white fw-600">About Us</h4>
+                    <p class="text-custom-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="text-custom-white">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                    </p>
+                    <ul class="custom-flex socials">
+                        @if ($setting->facebook != null)<li><a href="{{$setting->facebook}}" target="_blank" class="text-custom-white fs-14"><i class="fab fa-facebook-f"></i></a></li>@endif
+                        @if ($setting->twitter != null)<li><a href="{{$setting->twitter}}" target="_blank" class="text-custom-white fs-14"><i class="fab fa-twitter"></i></a></li>@endif
+                        @if ($setting->instagram != null)<li><a href="{{$setting->instagram}}" target="_blank" class="text-custom-white fs-14"><i class="fab fa-linkedin"></i></a></li>@endif
+                        @if ($setting->youtube != null)<li><a href="{{$setting->youtube}}" target="_blank" class="text-custom-white fs-14"><i class="fab fa-youtube"></i></a></li>@endif
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-md-40">
+                    <h4 class="text-custom-white fw-600">Quick Links</h4>
+                    <ul class="custom links">
+                        <li>
+                            <a href="index.html" class="text-custom-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="hotels.html" class="text-custom-white">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="flights.html" class="text-custom-white">Flights</a>
+                        </li>
+                        <li>
+                            <a href="cruise.html" class="text-custom-white">Cruise</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="text-custom-white">Blog</a>
+                        </li>
+                        <li>
+                            <a href="404.html" class="text-custom-white">404</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-custom-white">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-sm-40">
+                    <h4 class="text-custom-white fw-600">Instagram</h4>
+                    <ul class="custom instagram gallery-grid">
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_1.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_1.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_2.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_2.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_3.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_3.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_4.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_4.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_5.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_5.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_6.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_6.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_7.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_7.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_8.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_8.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ asset('assets')}}/images/gallery/g_gal_9.jpg" class="text-custom-white popup">
+                                <img src="{{ asset('assets')}}/images/gallery/g_gal_9.jpg" class="image-fit" alt="img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-box mb-sm-40">
+                    <h4 class="text-custom-white fw-600">Newsletter</h4>
+                    <div class="newsletter">
+                        <p class="text-custom-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" name="#" class="form-control form-control-custom" placeholder="Email I'd">
+                            </div>
+                            <button type="submit" class="btn-first btn-submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
-
-<script src="{{ asset('assets')}}/js/jquery-3.3.1.min.js"></script>
-<script src="{{ asset('assets')}}/js/jquery-migrate-3.0.1.min.js"></script>
+<!-- End Footer -->
+<!-- Start Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-custom-white">© Toor - 2020 | All Right Reserved <a  class="text-custom-white"></a> {{ $setting->company }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Copyright -->
+<div id="back-top" class="back-top">
+    <a href="#top"><i class="flaticon-arrows"></i></a>
+</div>
+<!-- jQuery -->
+<script src="{{ asset('assets')}}/js/jquery.min.js"></script>
+<!-- Popper -->
 <script src="{{ asset('assets')}}/js/popper.min.js"></script>
+<!-- Bootstrap -->
 <script src="{{ asset('assets')}}/js/bootstrap.min.js"></script>
-<script src="{{ asset('assets')}}/js/owl.carousel.min.js"></script>
-<script src="{{ asset('assets')}}/js/jquery.stellar.min.js"></script>
-<script src="{{ asset('assets')}}/js/jquery.fancybox.min.js"></script>
-
-
-<script src="{{ asset('assets')}}/js/aos.js"></script>
-
-<script src="{{ asset('assets')}}/js/bootstrap-datepicker.js"></script>
-<script src="{{ asset('assets')}}/js/jquery.timepicker.min.js"></script>
-
-
-
-<script src="{{ asset('assets')}}/js/main.js"></script>
+<!-- Range Slider -->
+<script src="{{ asset('assets')}}/js/ion.rangeSlider.min.js"></script>
+<!-- Slick Slider -->
+<script src="{{ asset('assets')}}/js/slick.min.js"></script>
+<!-- Datepicker -->
+<script src="{{ asset('assets')}}/js/datepicker.js"></script>
+<script src="{{ asset('assets')}}/js/datepicker.en.js"></script>
+<!-- Isotope Gallery -->
+<script src="{{ asset('assets')}}/js/isotope.pkgd.min.js"></script>
+<!-- Nice Select -->
+<script src="{{ asset('assets')}}/js/jquery.nice-select.js"></script>
+<!-- magnific popup -->
+<script src="{{ asset('assets')}}/js/jquery.magnific-popup.min.js"></script>
+<!-- Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg"></script>
+<!-- Custom Js -->
+<script src="{{ asset('assets')}}/js/custom.js"></script>
+<!-- /Place all Scripts Here -->

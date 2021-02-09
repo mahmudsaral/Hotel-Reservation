@@ -1,16 +1,11 @@
 @extends('layouts.home')
+@php
+    $setting = \App\Http\Controllers\HomeController::getSetting()
+@endphp
 
-@section('title','SOGO HOTEL')
-
-@section('description')
-
-    Huzurun Adresi...
-
-@endsection
-
-@section('keywords','Hotel','Rezervasyon')
-
-
+@section('title',$setting->title)
+@section('description'){{ $setting->description }}@endsection
+@section('keywords',$setting->keywords)
 
 
 

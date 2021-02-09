@@ -30,7 +30,7 @@ class HotelController extends Controller
      */
     public function create()
     {
-        $datalist = Hotel::all();
+        $datalist = Category::with('children')->get();
         return view('admin.hotel_add',['datalist' => $datalist]);
 
     }
@@ -61,7 +61,6 @@ class HotelController extends Controller
         $data->user_id= Auth::id();
         $data->status= $request->input('status');
         $data->slug = $request->input('slug');
-
         $data->save();
         return redirect()->route('admin_hotels');
     }
@@ -86,7 +85,7 @@ class HotelController extends Controller
     public function edit(Hotel $hotel,$id)
     {
         $data = Hotel::find($id);
-        $datalist = Category::all();
+        $datalist = Category::with('children')->get();
         return view('admin.hotel_edit',['data' => $data,'datalist' => $datalist]);
 
     }

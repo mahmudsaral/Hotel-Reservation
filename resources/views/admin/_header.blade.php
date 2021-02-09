@@ -1,6 +1,6 @@
-<!-- ============================================================== -->
-<!-- Topbar header - style you can find in pages.scss -->
-<!-- ============================================================== -->
+@php
+    $setting = \App\Http\Controllers\HomeController::getSetting()
+@endphp
 <header class="topbar">
     <nav class="navbar top-navbar navbar-expand-md navbar-dark">
         <!-- ============================================================== -->
@@ -260,7 +260,7 @@
                         <div class="dropdown-divider"></div>
                         <!-- text-->
                         @auth
-                        <a href="{{route('admin_logout')}}" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                        <a href="{{route('logout')}}" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                         @endauth
                     </div>
                 </li>

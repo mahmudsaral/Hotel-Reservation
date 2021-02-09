@@ -20,15 +20,17 @@
                 <li> <a href="{{route('admin_hotels')}}" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Hotels <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
                 </li>
                 <li> <a href="{{route('admin_category')}}" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu">Category <span class="badge badge-pill badge-cyan ml-auto"></span></span></a>
-                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Inbox</span></a>
+                <li> <a class="has-arrow waves-effect waves-dark" href="{route('admin_message')}}" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Contact Messages</span></a>
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-palette"></i>Ui Elements <span class="badge badge-pill badge-primary text-white ml-auto"></span></a>
 
                 </li>
                 <li class="nav-small-cap">--- SUPPORT</li>
-                <li> <a class="waves-effect waves-dark" href="../documentation/documentation.html" aria-expanded="false"><i class="fa fa-circle-o text-danger"></i><span class="hide-menu">Documentation</span></a></li>
+                <li> <a class="waves-effect waves-dark" href="{{route('admin_setting')}}" aria-expanded="false"><i class="fa fa-circle-o text-danger"></i><span class="hide-menu">Setting</span></a></li>
                 <li> <a class="waves-effect waves-dark" href="pages-login.html" aria-expanded="false"><i class="fa fa-circle-o text-success"></i><span class="hide-menu">Log Out</span></a></li>
-                <li> <a class="waves-effect waves-dark" href="pages-faq.html" aria-expanded="false"><i class="fa fa-circle-o text-info"></i><span class="hide-menu">FAQs</span></a></li>
+                <li> <a class="waves-effect waves-dark" href="{{route('admin_review')}}" aria-expanded="false"><i class="fa fa-circle-o text-info"></i><span class="hide-menu">Review</span></a></li>
+                <li> <a class="waves-effect waves-dark" href="{{route('admin_faq')}}" aria-expanded="false"><i class="fa fa-circle-o text-info"></i><span class="hide-menu">FAQ</span></a></li>
+
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
