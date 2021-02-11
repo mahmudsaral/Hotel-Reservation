@@ -20,468 +20,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e019164-6e4e-4144-bf22-d6185a86182e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/Flaticon-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/Flaticon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/font/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/ion.rangeSlider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-brands-400-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-regular-400-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-solid-900-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/404.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/author-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_grid_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/blog_large.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/comment_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/comment_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/comment_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/small_blog_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/small_blog_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/small_blog_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/small_blog_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/small_blog_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/blog/small_blog_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/breadcrumb-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/car-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cars/car_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/counter-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/cruise/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flight-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/flights/flight.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/gallery/g_gal_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotel-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_1s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_2s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_3s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_4s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/hotels/slide_5s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/logo-1-t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/logo-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/logo-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/logo-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/offers01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/offers02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/offers03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/offers04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/soon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/team-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/toor-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/tour-block_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/tour-block_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/tour-block_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/images/tour-block_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/datepicker.en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/ion.rangeSlider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/jquery.nice-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/assets/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/blog-details-left-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/blog-details-right-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/blog-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/blog-left-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/blog-right-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/booking.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/car-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cars-left-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cars-right-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/coming-soon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cruise-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cruise-left-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cruise-right-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/cruise.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/faqs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/flight-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/flights-left-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/flights-right-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/flights.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/homepage-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/hotel-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/hotel-left-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/hotel-right-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/hotels.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/index.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TEMPS/Toor - Travel Booking HTML5 Template/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/FaqController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MessageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ReviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Reservation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Room.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_153441_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_153706_setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_160443_add_address_to_users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_161516_add_phone_to_users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_180756_create_messages_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_180821_message.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_210709_create_reviews_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_212137_review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_06_190847_create_faqs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_06_191931_faq.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_185437_create_rooms_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_190317_create_reservations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_121345_room.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_09_121620_reservation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/Flaticon-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/Flaticon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/Flaticon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/Flaticon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/Flaticon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/Flaticon.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/font/flaticon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/ion.rangeSlider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-brands-400-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-regular-400-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900-1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/404.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/author-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_grid_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/blog_large.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/comment_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/comment_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/comment_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/small_blog_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/small_blog_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/small_blog_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/small_blog_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/small_blog_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/blog/small_blog_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/breadcrumb-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/car-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cars/car_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/counter-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/cruise/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flight-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/flights/flight.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/gallery/g_gal_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotel-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_1s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_2s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_3s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_4s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/hotels/slide_5s.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo-1-t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/logo-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/offers01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/offers02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/offers03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/offers04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/soon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/team-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/toor-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/tour-block_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/tour-block_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/tour-block_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/tour-block_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/datepicker.en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/ion.rangeSlider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.nice-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/markdown/policy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/markdown/terms.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/faq_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/messages_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/review.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/review_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/confirm-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_banner.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_blank.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/_start.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/blank.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/hotel_detail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/references.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_hotel.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_hotel_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_hotel_edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_hotel_image_add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/user_reviews.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/appx.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/home2.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/review.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/policy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/terms.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/ApiTokenPermissionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/BrowserSessionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteAccountTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/DeleteApiTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/ProfileInformationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/TwoFactorAuthenticationSettingsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/UpdatePasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_203109_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_203250_roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_203454_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_10_203610_role_user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/rezervasyon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/images/room.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/room_add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_reservation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/user_reservation_add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HotelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ImageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReservationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Hotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Hotel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reservation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/magnific-popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/hotel_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/hotel_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/image_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_banner.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/hotel_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/hotel_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -631,7 +204,7 @@
     <property name="DatabaseDriversLRU" value="java.sql.Driver&#10;mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="C:\Program Files\nodejs" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -639,8 +212,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\php\Laravel12j\resources\views\home" />
       <recent name="C:\php\Laravel12j\resources\views\admin" />
+      <recent name="C:\php\Laravel12j\resources\views\home" />
       <recent name="C:\php\Laravel12j\resources\views\layouts" />
     </key>
   </component>
@@ -690,7 +263,12 @@
       <workItem from="1612246135171" duration="8039000" />
       <workItem from="1612440138683" duration="16939000" />
       <workItem from="1612532400557" duration="49961000" />
-      <workItem from="1612872428210" duration="3999000" />
+      <workItem from="1612872428210" duration="8501000" />
+      <workItem from="1612900241852" duration="9275000" />
+      <workItem from="1612951445900" duration="27531000" />
+      <workItem from="1612990752043" duration="148000" />
+      <workItem from="1612990913409" duration="525000" />
+      <workItem from="1612991455689" duration="9105000" />
     </task>
     <task id="LOCAL-00001" summary="15 Laravel Product Image Upload and Display ve öncesi">
       <created>1609868650746</created>
@@ -706,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609882141943</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4.commit">
+      <created>1612877865971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612877865971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +313,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="15 Laravel Product Image Upload and Display ve öncesi" />
     <MESSAGE value="3.Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.Commit" />
+    <MESSAGE value="4.commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="67" key="#CLI_Interpreters" timestamp="1606733103052">
@@ -747,14 +333,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1609796757980" />
+    <state x="514" y="136" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612989606198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="514" y="136" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1612989606198" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612028167993">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612028167993" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612709328862">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612960298543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612709328862" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612960298543" />
     <state x="549" y="338" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1612560736839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -779,10 +369,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609703595359" />
-    <state x="597" y="135" key="NewPhpClassDialog" timestamp="1612875658206">
+    <state x="597" y="135" key="NewPhpClassDialog" timestamp="1612990319083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="597" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1612875658206" />
+    <state x="597" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1612990319083" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1612627776955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -791,14 +381,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609868844150" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609882147527">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612877882819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609882147527" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612877882819" />
     <state x="651" y="300" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612116461105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="300" width="312" height="243" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1612116461105" />
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog" timestamp="1612960384260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1612960384260" />
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1606733074656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

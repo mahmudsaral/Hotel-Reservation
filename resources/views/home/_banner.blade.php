@@ -3,24 +3,17 @@
         <div class="row">
             <div class="col-12">
                 <div class="tabs">
-                    <ul class="custom-flex nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#hotel">Hotel</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#cruise">SEARCH</a>
-                        </li>
-                    </ul>
                     <div class="tab-content bg-custom-white bx-wrapper padding-20">
                         <div class="tab-pane active" id="hotel">
                             <div class="tab-inner">
-                                <form>
+                                <form action="{{route('gethotel')}}" method="post">
+                                    @csrf
                                     <div class="row">
                                         <div class="col-lg-3 col-md-6">
                                             <div class="form-group">
                                                 <label class="fs-14 text-custom-black fw-500">Your Destination</label>
-                                                <input type="text" name="#" class="form-control form-control-custom" placeholder="Your Destination and Hotel Name">
+                                                @livewire('search')
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-6">
@@ -95,41 +88,13 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane" id="cruise">
-                            <div class="tab-inner">
-                                <form action="{{route('gethotel')}}" method="post">
-                                    @csrf
-
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="form-group">
-                                                <label class="fs-14 text-custom-black fw-500">HOTELS</label>
-                                                @livewire('search')
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-12">
-                                            <div class="row">
-
-                                                <div class="col-6">
-
-                                                    <label class="submit"></label>
-                                                    <button type="submit" class="btn-first btn-submit full-width btn-height">Search Now</button>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
                                 @section('footerjs')
-                                @livewireScripts
+                                    @livewireScripts
                                 @endsection
                             </div>
                         </div>
+
+
 
                     </div>
                 </div>

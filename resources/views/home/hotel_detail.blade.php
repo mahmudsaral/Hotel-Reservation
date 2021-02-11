@@ -25,6 +25,7 @@
     @php
         $countreview = \App\Http\Controllers\HomeController::countreview($data->id);
     @endphp
+
     <!-- End Subheader -->
     <!-- Start Listing detail -->
     <section class="section-padding bg-light-white listing-details">
@@ -34,15 +35,15 @@
                     <div class="listing-details-inner bx-wrapper bg-custom-white padding-20">
                         <div class="row">
                             <div class="col-lg-8">
-                                <div class="detail-slider-for mb-xl-20 magnific-gallery">
+                                <div class="detail-slider-for mb-xl-15 magnific-gallery">
                                     @foreach($datalist as $rs)
-                                    <div class="slide-item">
+                                        <div class="slide-item">
 
-                                        <a href="{{ Storage::url($rs->image)}}" class="popup">
-                                            <img src="{{ Storage::url($rs->image)}}" class="image-fit" alt="img">
-                                        </a>
+                                            <a href="{{ Storage::url($rs->image)}}" class="popup">
+                                                <img src="{{ Storage::url($rs->image)}}" class="image-fit" alt="img">
+                                            </a>
 
-                                    </div>
+                                        </div>
                                     @endforeach
                                     <div class="slide-item">
                                     </div>
@@ -72,6 +73,9 @@
                                             <li class="nav-item">
                                                 <a class="nav-link" data-toggle="tab" href="#faqs">FAQs</a>
                                             </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#rooms">Rooms &Price </a>
+                                            </li>
                                         </ul>
                                         <div class="tab-content">
                                             <div class="tab-pane fade active show" id="overview">
@@ -91,41 +95,41 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                            <div class="col-md-7">
-                                                                <div class="listing-testimonial padding-20 bg-light-white mb-xl-20">
-                                                                    <div class="testimonial-inner detail-testimonial">
-                                                                        <div class="tesimonial-item">
-                                                                            <cite class="text-custom-blue fs-16">Always enjoyed my stay with  and Resorts, top class room service and rooms have great outside views and luxury assessories.</cite>
-                                                                            <div class="testimonial-author">
+                                                        <div class="col-md-7">
+                                                            <div class="listing-testimonial padding-20 bg-light-white mb-xl-20">
+                                                                <div class="testimonial-inner detail-testimonial">
+                                                                    <div class="tesimonial-item">
+                                                                        <cite class="text-custom-blue fs-16">Always enjoyed my stay with  and Resorts, top class room service and rooms have great outside views and luxury assessories.</cite>
+                                                                        <div class="testimonial-author">
 
-                                                                                <div class="author-name ml-2">
-                                                                                    <h6 class="text-custom-black no-margin fs-14 fw-500"></h6>
-                                                                                    <p class="no-margin text-light-dark"></p>
-                                                                                </div>
+                                                                            <div class="author-name ml-2">
+                                                                                <h6 class="text-custom-black no-margin fs-14 fw-500"></h6>
+                                                                                <p class="no-margin text-light-dark"></p>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="tesimonial-item">
-                                                                            <cite class="text-custom-blue fs-16">Always enjoyed my stay with  and Resorts, top class room service and rooms have great outside views and luxury assessories.</cite>
-                                                                            <div class="testimonial-author">
-                                                                                <div class="author-name ml-2">
-                                                                                    <h6 class="text-custom-black no-margin fs-14 fw-500"></h6>
-                                                                                    <p class="no-margin text-light-dark"></p>
-                                                                                </div>
+                                                                    </div>
+                                                                    <div class="tesimonial-item">
+                                                                        <cite class="text-custom-blue fs-16">Always enjoyed my stay with  and Resorts, top class room service and rooms have great outside views and luxury assessories.</cite>
+                                                                        <div class="testimonial-author">
+                                                                            <div class="author-name ml-2">
+                                                                                <h6 class="text-custom-black no-margin fs-14 fw-500"></h6>
+                                                                                <p class="no-margin text-light-dark"></p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
                                                             </div>
 
-                                                            <div class="col-12">
-                                                                <div class="information">
-                                                                    <h4 class="text-custom-black">About  and Resorts</h4>
-                                                                    <p class="text-light-dark">Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcorper vulputate nisi, et fringilla ante convallis quis. Nullam vel tellus non elit suscipit volutpat. Integer id felis et nibh rutrum dignissim ut non risus. In tincidunt urna quis sem luctus, sed accumsan magna pellentesque. Donec et iaculis tellus. Vestibulum ut iaculis justo, auctor sodales lectus. Donec et tellus tempus, dignissim maurornare, consequat lacus. Integer dui neque, scelerisque nec sollicitudin sit amet, sodales a erat. Duis vitae condimentum ligula. Integer eu mi nisl. Donec massa dui, commodo id arcu quis, venenatis scelerisque velit.</p>
-                                                                    <p class="text-light-dark no-margin">Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcorper vulputate nisi, et fringilla ante convallis quis. Nullam vel tellus non elit suscipit volutpat. Integer id felis et nibh rutrum dignissim ut non risus. In tincidunt urna quis sem luctus, sed accumsan magna pellentesque. Donec et iaculis tellus. Vestibulum ut iaculis justo, auctor sodales lectus. Donec et tellus tempus, dignissim maurornare, consequat lacus. Integer dui neque, scelerisque nec sollicitudin sit amet, sodales a erat. Duis vitae condimentum ligula. Integer eu mi nisl. Donec massa dui, commodo id arcu quis, venenatis scelerisque velit.</p>
+                                                        </div>
 
-                                                                </div>
+                                                        <div class="col-12">
+                                                            <div class="information">
+                                                                <h4 class="text-custom-black">About  and Resorts</h4>
+                                                                <p class="text-light-dark">Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcorper vulputate nisi, et fringilla ante convallis quis. Nullam vel tellus non elit suscipit volutpat. Integer id felis et nibh rutrum dignissim ut non risus. In tincidunt urna quis sem luctus, sed accumsan magna pellentesque. Donec et iaculis tellus. Vestibulum ut iaculis justo, auctor sodales lectus. Donec et tellus tempus, dignissim maurornare, consequat lacus. Integer dui neque, scelerisque nec sollicitudin sit amet, sodales a erat. Duis vitae condimentum ligula. Integer eu mi nisl. Donec massa dui, commodo id arcu quis, venenatis scelerisque velit.</p>
+                                                                <p class="text-light-dark no-margin">Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcorper vulputate nisi, et fringilla ante convallis quis. Nullam vel tellus non elit suscipit volutpat. Integer id felis et nibh rutrum dignissim ut non risus. In tincidunt urna quis sem luctus, sed accumsan magna pellentesque. Donec et iaculis tellus. Vestibulum ut iaculis justo, auctor sodales lectus. Donec et tellus tempus, dignissim maurornare, consequat lacus. Integer dui neque, scelerisque nec sollicitudin sit amet, sodales a erat. Duis vitae condimentum ligula. Integer eu mi nisl. Donec massa dui, commodo id arcu quis, venenatis scelerisque velit.</p>
+
                                                             </div>
+                                                        </div>
                                                         {{--@endforeach--}}
                                                     </div>
                                                 </div>
@@ -309,20 +313,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="card">
-                                                        <div class="card-header" id="headingThree">
-                                                            <button class="collapsebtn collapsed" data-toggle="collapse" data-target="#collapseThree">
-                                                                Refunds
-                                                            </button>
-                                                        </div>
-                                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                                            <div class="card-body">
-                                                                <p class="text-theme no-margin">
-                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card">
                                                         <div class="card-header" id="headingFour">
                                                             <button class="collapsebtn collapsed" data-toggle="collapse" data-target="#collapseFour">
                                                                 Pricing
@@ -361,6 +351,75 @@
                                                                 <p class="text-theme no-margin">
                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
                                                                 </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="rooms">
+                                                <div id="accordion" class="custom-accordion">
+
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingFour">
+                                                            <button class="collapsebtn collapsed" data-toggle="collapse" data-target="#collapseFour">
+                                                                Pricing
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <p class="text-theme no-margin">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <div class="card-header" id="headingSix">
+                                                            <button class="collapsebtn collapsed" data-toggle="collapse" data-target="#collapseSix">
+                                                                Your Reservation
+                                                            </button>
+                                                        </div>
+                                                        <div id="collapseSix" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <div class="table-responsive m-t-40">
+
+                                                                    <table id="myTable" class="table table-bordered table-striped">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th>Title(s)</th>
+                                                                            <th>Image</th>
+                                                                            <th>Price</th>
+                                                                            <th>Reserve</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        @foreach ($rooms as $rs)
+
+                                                                            <tr>
+                                                                                <td>{{ $rs->title }}</td>
+                                                                                <td>
+                                                                                    @if($rs->image)
+                                                                                        <img src="{{ Storage::url($rs->image)}}" height="60" alt="">
+                                                                                    @endif
+                                                                                </td>
+                                                                                <td>{{ $rs->price }}</td>
+                                                                                <td colspan="3">
+                                                                                    <form action="{{route('user_reservation_add',['id'=> $rs->id,'hotel_id'=>$data->id])}}" method="post" accept-charset="" enctype="multipart/form-data">
+                                                                                        @csrf
+                                                                                        <input type="hidden" name="price" value="{{$rs->price}}">
+                                                                                        Days <input type="number" id="days" name="days" value="1">
+                                                                                        Checkin Date:<input type="date" id="checkin" name="checkin" style="width: 120px" required>
+                                                                                        <input height="10" type="submit" value="Reserve Room" class="btn btn-primary">
+                                                                                    </form>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        @endforeach
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -406,19 +465,19 @@
                                             </form>
                                         </div>
 
-                                            <div class="hotel-grid mb-xl-30">
-                                                <div class="hotel-grid-wrapper bx-wrapper">
-                                                    <div class="image-sec p-relative">
-                                                        <a href="#">
-                                                            <img src="{{Storage::url($data->image)}}" class="full-width" alt="img">
-                                                        </a>
-                                                    </div>
-                                                    <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
-                                                        <h4 class="title fs-16"><a href="#" class="text-custom-black">{{$data->title}} <small class="text-light-dark">{{$data->country}} {{$data->city}}</small></a></h4>
+                                        <div class="hotel-grid mb-xl-30">
+                                            <div class="hotel-grid-wrapper bx-wrapper">
+                                                <div class="image-sec p-relative">
+                                                    <a href="#">
+                                                        <img src="{{Storage::url($data->image)}}" class="full-width" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
+                                                    <h4 class="title fs-16"><a href="#" class="text-custom-black">{{$data->title}} <small class="text-light-dark">{{$data->country}} {{$data->city}}</small></a></h4>
 
-                                                        <span class="star"><small></small>Reviews({{$countreview}})</span>
+                                                    <span class="star"><small></small>Reviews({{$countreview}})</span>
 
-                                                        @foreach($reviews as $rs)
+                                                    @foreach($reviews as $rs)
 
                                                         <div class="feedback">
                                                             <div class="ratings">
@@ -437,10 +496,10 @@
                                                             <a class="btn-second btn-small" href="#">SELECT</a>
                                                             <a class="btn-first btn-submit yellow" href="#">VIEW</a>
                                                         </div>
-                                                    </div>
-                                                    @endforeach
                                                 </div>
+                                                @endforeach
                                             </div>
+                                        </div>
 
                                         <div class="need-help bx-wrapper padding-20">
                                             <h5 class="text-custom-black">Need Help?.</h5>

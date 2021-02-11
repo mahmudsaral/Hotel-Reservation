@@ -45,8 +45,6 @@ class ImageController extends Controller
         //
 
         $data = new Image;
-
-
         $data->title = $request->input('title');
         $data->hotel_id = $hotel_id;
         $data->image =Storage::putFile('images',$request->file('image'));
@@ -97,7 +95,6 @@ class ImageController extends Controller
     {
         //
         $data = Image::find($id);
-
         $data->delete();
         return redirect()->route('admin_image_add',['hotel_id'=>$hotel_id]);
     }

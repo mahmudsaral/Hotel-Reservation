@@ -2,8 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hotel;
+use App\Models\Image;
 use App\Models\Reservation;
+use App\Models\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ReservationController extends Controller
 {
@@ -14,7 +20,8 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        //
+        $datalist = Reservation::where('user_id',Auth::id())->get();
+        return view('home',['datalist' => $datalist]);
     }
 
     /**
@@ -22,9 +29,13 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request,$hotel_id)
     {
-        //
+        $data = Room::find($hotel_id);
+        $days = $request->input('days');
+        $checkin = $request->input('checkin');
+        return view('home.user_reservation_add',['data' => $data,'days'=>$days,'checkin'=>$checkin]);
+
     }
 
     /**
@@ -33,9 +44,30 @@ class ReservationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$hotel_id)
     {
-        //
+        $data = new Room;
+        $data->title = $request->input('title');
+        $data->description = $request->input('description');
+        $data->price = $request->input('price');
+        $data->adet = $request->input('adet');
+        $data->status = $request->input('status');
+        $data->image = Storage::putFile('rooms',$request->file('image'));
+        $data->save();
+
+        $datalist = Reservation::where('user_id',Auth::id())->get();
+        foreach($datalist as $rs)
+        {
+            $data2 = new Reservation;
+            $data2->user_id=Auth::id();
+            $data2->hotel_id= $rs->hotel_id;
+            $data2->checkin = $rs->input('checkin');
+            $data2->days = $rs->input('days');
+            $data2->save();
+        }
+
+        return redirect()->route('user_hotels');
+
     }
 
     /**
@@ -46,7 +78,7 @@ class ReservationController extends Controller
      */
     public function show(Reservation $reservation)
     {
-        //
+
     }
 
     /**

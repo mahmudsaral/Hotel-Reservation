@@ -62,7 +62,7 @@ class HotelController extends Controller
         $data->status= $request->input('status');
         $data->slug = $request->input('slug');
         $data->save();
-        return redirect()->route('admin_hotels');
+        return redirect()->route('home');
     }
 
     /**

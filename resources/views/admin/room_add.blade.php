@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title> Image Gallery</title>
+    <title> Rooms</title>
     <link href="{{asset('assets')}}/admin/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
     <!--Toaster Popup message CSS -->
     <link href="{{asset('assets')}}/admin/assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 
     <div class="row">
         <div class="col-sm-12 col-xs-12">
-            <form role="form" action="{{route('admin_image_store',['hotel_id'=>$data->id])}}" method="post"
+            <form role="form" action="{{route('admin_room_store',['hotel_id'=>$data->id])}}" method="post"
                   enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
@@ -39,13 +39,37 @@
                     <input type="text" name="title" class="form-control">
                 </div>
 
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" name="description" class="form-control">
+                </div>
 
                 <div class="form-group">
                     <label>Image</label>
                     <input type="file" name="image" class="form-control">
                 </div>
 
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="text" name="price" class="form-control">
+                </div>
 
+                <div class="form-group">
+                    <label>Adet</label>
+                    <input type="text" name="adet" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Status</label>
+                    <select class="form-control custom-select"
+                            name="status">
+                        <option value="0" selected="selected" name="status">False</option>
+                        <option>True</option>
+                    </select>
+                </div>
+
+
+                ,
                 <div class="form-group">
                     <div class="checkbox checkbox-success">
                         <input id="checkbox1" type="checkbox">
@@ -65,19 +89,23 @@
             <tr>
                 <th>ID</th>
                 <th>Title(s)</th>
+                <th>Description</th>
                 <th>Image</th>
+                <th>Price</th>
+                <th>Adet</th>
+                <th>Status</th>
                 <th>Delete</th>
-
-
             </tr>
             </thead>
             <tbody>
-            @foreach ($images as $rs)
+            @foreach ($rooms as $rs)
 
                 <tr>
                     <td>{{ $rs->id }}</td>
 
                     <td>{{ $rs->title }}</td>
+
+                    <td>{{ $rs->description }}</td>
 
                     <td>
                         @if($rs->image)
@@ -85,10 +113,17 @@
                         @endif
                     </td>
 
+                    <td>{{ $rs->price }}</td>
 
-                    <td><a href="{{route('admin_image_delete',['id'=> $rs->id,'hotel_id'=>$data->id])}}"
+                    <td>{{ $rs->adet }}</td>
+
+                    <td>{{ $rs->status }}</td>
+
+
+                    <td><a href="{{route('admin_room_delete',['id'=> $rs->id,'hotel_id'=>$data->id])}}"
                            onclick="return confirm('Record will be Delete! Are you sure ?')">
-                            <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a></td>
+                            <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a>
+                    </td>
                 </tr>
 
             @endforeach

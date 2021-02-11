@@ -7,11 +7,14 @@ use App\Models\Category;
 use App\Models\Hotel;
 use App\Models\Image;
 use App\Models\Message;
+use App\Models\Reservation;
+use App\Models\Room;
 use App\Models\Setting;
 use Faq;
 use Hamcrest\Core\Set;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
@@ -67,9 +70,19 @@ class HomeController extends Controller
         $data = Hotel::find($id);
         $datalist = Image::where('hotel_id',$id)->get();
         $reviews = \App\Models\Review::where('hotel_id',$id)->get();
-        return view('home.hotel_detail',['data'=> $data,'datalist'=> $datalist,'reviews'=> $reviews]);
+        $rooms = Room::where('hotel_id',$id)->get();
+        $reservations = Reservation::find($id);
+        return view('home.hotel_detail',['data'=> $data,'datalist'=> $datalist,'reviews'=> $reviews,'rooms'=> $rooms,'reservations'=>$reservations]);
 
     }
+    public function reservation($id)
+    {
+        $data = Hotel::find($id);
+        $rooms = Room::where('hotel_id',$id)->get();
+        $reservations = Reservation::find($id);
+        return view('home.user_reservation_add',['data'=> $data,'rooms'=> $rooms,'reservations'=>$reservations]);
+    }
+
     public function hoteldetail($id)
     {
         echo"View the hotel <br>";
@@ -78,6 +91,7 @@ class HomeController extends Controller
         exit();
 
     }
+
     public function gethotel(Request $request)
     {
        /* $search=$request->input('search');

@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title','Admin Panel Home Page')
+@section('title','User')
 
 
 @section('content')
@@ -40,43 +40,36 @@
                                             <table id="myTable" class="table table-bordered table-striped">
                                                 <thead>
                                                 <tr>
-                                                    <th>Title</th>
-                                                    <th>Description</th>
-                                                    <th>Star</th>
-                                                    <th>Address</th>
-                                                    <th>Image</th>
-                                                    <th>Country</th>
-                                                    <th>Image Gallery</th>
-                                                    <th>Rooms</th>
-                                                    <th>Status</th>
-                                                    <th>Category</th>
+                                                    <th>Id</th>
                                                     <th></th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Phone</th>
+                                                    <th>Address</th>
+                                                    <th>Roles</th>
+                                                    <th colspan="2">Actions</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 @foreach ($datalist as $rs)
 
-                                                <tr>
-                                                    <td>{{ $rs->title }}</td>
-                                                    <td>{{ $rs->description }}</td>
-                                                    <td>{{ $rs->star }}</td>
-                                                    <td>{{ $rs->address }}</td>
-                                                    <td>
-                                                    @if ($rs->image)
-                                                        <img src="{{Storage::url($rs->image)}}" height="30" alt="">
-                                                    @endif
-                                                    </td>
-                                                    <td>{{ $rs->country }}</td>
-                                                    <td><a href="{{route('admin_image_add',['hotel_id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"><img
-                                                                src="{{asset('assets/admin/images')}}/galleryicon.png" height="35"></a></td>
-                                                    <td><a href="{{route('admin_room_add',['hotel_id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"><img
-                                                                src="{{asset('assets/admin/images')}}/room.jpg" height="35"></a></td>
-                                                    <td>{{ $rs->status }}</td>
-                                                    <td>{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title)}}</td>
-
-                                                    <td><a href="{{route('admin_hotel_edit',['id'=> $rs->id])}}"> <ion-icon name="create-outline"></ion-icon> <img src="{{asset('assets/admin/images')}}/editicon.png" height="40"></a></td>
-                                                    <td><a href="{{route('admin_hotel_delete',['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure ?')"> <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a></td>
-                                                </tr>
+                                                    <tr>
+                                                        <td>{{ $rs->id }}</td>
+                                                        @if ($rs->profile_photo_path)
+                                                            <img src="{{Storage::url($rs->profile_path_url)}}" height="30" alt="">
+                                                        @endif
+                                                        <td>{{ $rs->name }}</td>
+                                                        <td>{{ $rs->email }}</td>
+                                                        <td>{{ $rs->phone }}</td>
+                                                        <td>{{ $rs->address }}</td>
+                                                        <td>@foreach($rs->roles as $row)
+                                                                {{$row->name}},
+                                                        <td><a href="{{route('admin_user_roles',['id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"> <ion-icon name="create-outline"></ion-icon></a></td>
+                                                        @endforeach
+                                                        </td>
+                                                        <td><a href="{{route('admin_user_edit',['id'=> $rs->id])}}"> <ion-icon name="create-outline"></ion-icon> <img src="{{asset('assets/admin/images')}}/editicon.png" height="40"></a></td>
+                                                        <td><a href="{{route('admin_user_delete',['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure ?')"> <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a></td>
+                                                    </tr>
 
                                                 @endforeach
 
