@@ -5,7 +5,6 @@
 @section('content')
 
     <div class="page-wrapper">
-
         <!-- ============================================================== -->
         <!-- Container fluid  -->
         <!-- ============================================================== -->
@@ -15,11 +14,16 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h4 class="text-themecolor">Hotels</h4>
+                    <h4 class="text-themecolor">User Roles</h4>
                 </div>
                 <div class="col-md-7 align-self-center text-right">
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="{{route('admin_hotel_add')}}" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Add Hotel </a>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">User Roles</li>
+
+                        </ol>
+                          @include('home.message')
                     </div>
                 </div>
             </div>
@@ -33,60 +37,57 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <tr>
+                                    <th>Id</th><td>{{$data->id}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th><td>{{$data->name}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th><td>{{$data->email}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone</th><td>{{$data->phone}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Address</th><td>{{$data->address}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Date</th><td>{{$data->created_at}}</td>
+                                </tr>
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="table-responsive m-t-40">
-                                        <table id="myTable" class="table table-bordered table-striped">
-                                            <thead>
-                                            <tr>
-                                                <th>Id</th>
-                                                <th>Name</th>
-                                                <th>Hotels</th>
-                                                <th>Subject</th>
-                                                <th>Review</th>
-                                                <th>Rate</th>
-                                                <th>Status</th>
-                                                <th>Date</th>
-                                                <th class="text-nowrap">Action</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            @include('home.message')
-                                            @foreach ($datalist as $rs)
-
+                                <tr>
+                                    <th>Roles</th>
+                                    <td>
+                                        <table>
+                                            @foreach($data->roles as $row)
                                                 <tr>
-                                                    <td>{{$rs->id}}</td>
+                                                    <td>{{$row->name}}</td>
                                                     <td>
-                                                        <a href="{{route('admin_user_show',['id'=> $rs->user->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">{{$rs->user->name}}</a></td>
-                                                    </td>
-                                                    <td>
-                                                        <a href="{{route('hotel',['id'=>$rs->hotel->id,'slug'=>$rs->hotel->slug])}}">{{$rs->hotel->title}}</a>
-                                                    </td>
-                                                    <td>{{$rs->subject}}</td>
-                                                    <td>{{$rs->review}}</td>
-                                                    <td>{{$rs->rate}}</td>
-                                                    <td>{{$rs->status}}</td>
-                                                    <td>{{$rs->created_at}}</td>
-
-                                                    <td class="text-nowrap">
-                                                        <a href="{{route('admin_review_delete',['id'=>$rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">
-                                                            <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40">
-                                                        </a>
-                                                    <td><a href="{{route('admin_review_show',['id'=> $rs->id])}}"> <img src="{{asset('assets/admin/images')}}/editicon.png" height="40" ></a></td>
-
-
+                                                        <a href="{{route('admin_user_role_delete',['userid'=> $data->id,'roleid'=> $row->id])}}" onclick="return confirm('Delete! Are you sure ?')"> <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a>
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <th>Add Role</th>
+                                                    <td>
+                                                        <form role="form" action="{{route('admin_user_role_add',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                                            @csrf
+                                                            <select name="roleid">
+                                                                @foreach($datalist as $rs)
+                                                                    <option value="{{$rs->id}}">{{$rs->name}}</option>
+                                                                @endforeach
 
+                                                            </select>
+                                                            <button type="submit" class="btn btn-primary">Add Role</button>
+                                                        </form>
+                                                    </td>
+                                                </tr>
                                             @endforeach
-
-                                            </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                            </div>
-
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -156,84 +157,6 @@
         <!-- End Container fluid  -->
         <!-- ============================================================== -->
     </div>
-
-
-@endsection
-
-@section('footer')
-    <script src="{{ asset('assets')}}/admin/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{ asset('assets')}}/admin/assets/node_modules/popper/popper.min.js"></script>
-    <script src="{{ asset('assets')}}/admin/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="{{ asset('assets')}}/admin/dist/js/perfect-scrollbar.jquery.min.js"></script>
-    <!--Wave Effects -->
-    <script src="{{ asset('assets')}}/admin/dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="{{ asset('assets')}}/admin/dist/js/sidebarmenu.js"></script>
-    <!--stickey kit -->
-    <script src="{{ asset('assets')}}/admin/assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <script src="{{ asset('assets')}}/admin/assets/node_modules/sparkline/jquery.sparkline.min.js"></script>
-    <!--Custom JavaScript -->
-    <script src="dist/js/custom.min.js"></script>
-    <!-- This is data table -->
-    <script src="{{ asset('assets')}}/admin/assets/node_modules/datatables/jquery.dataTables.min.js"></script>
-    <!-- start - This is for export functionality only -->
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
-    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
-    <!-- end - This is for export functionality only -->
-    <script>
-        $(document).ready(function() {
-            $('#myTable').DataTable();
-            $(document).ready(function() {
-                var table = $('#example').DataTable({
-                    "columnDefs": [{
-                        "visible": false,
-                        "targets": 2
-                    }],
-                    "order": [
-                        [2, 'asc']
-                    ],
-                    "displayLength": 25,
-                    "drawCallback": function(settings) {
-                        var api = this.api();
-                        var rows = api.rows({
-                            page: 'current'
-                        }).nodes();
-                        var last = null;
-                        api.column(2, {
-                            page: 'current'
-                        }).data().each(function(group, i) {
-                            if (last !== group) {
-                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
-                                last = group;
-                            }
-                        });
-                    }
-                });
-                // Order by the grouping
-                $('#example tbody').on('click', 'tr.group', function() {
-                    var currentOrder = table.order()[0];
-                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
-                        table.order([2, 'desc']).draw();
-                    } else {
-                        table.order([2, 'asc']).draw();
-                    }
-                });
-            });
-        });
-        $('#example23').DataTable({
-            dom: 'Bfrtip',
-            buttons: [
-                'copy', 'csv', 'excel', 'pdf', 'print'
-            ]
-        });
-    </script>
 
 @endsection
 

@@ -18,7 +18,7 @@
                                 <div class="hotel-grid-wrapper bx-wrapper">
 
                                     <div class="image-sec animate-img">
-                                        <a href="{{route('hoteldetail',['id' => $rs->id])}}">
+                                        <a href="{{route('hotel',['id' => $rs->id,'slug' => $rs->slug])}}">
                                             <img src="{{Storage::url($rs->image)}}" class="full-width" alt="img">
                                         </a>
                                     </div>
@@ -27,7 +27,6 @@
                                         <span class="price"><small>Star</small>{{$rs->star}}</span>
                                         <div class="action">
                                             <a class="btn-second btn-small" href="{{route('hotel',['id' => $rs->id,'slug' => $rs->slug])}}">View</a>
-                                            <a class="btn-first btn-submit" href="{{route('hoteldetail',['id' => $rs->id])}}">Book</a>
                                         </div>
                                     </div>
 

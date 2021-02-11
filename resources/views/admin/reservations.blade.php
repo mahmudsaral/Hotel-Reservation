@@ -1,11 +1,10 @@
 @extends('layouts.admin')
-@section('title','User')
+@section('title','Admin Reservations List')
 
 
 @section('content')
 
     <div class="page-wrapper">
-
         <!-- ============================================================== -->
         <!-- Container fluid  -->
         <!-- ============================================================== -->
@@ -15,11 +14,15 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h4 class="text-themecolor">Hotels</h4>
+                    <h4 class="text-themecolor">Reservations List</h4>
                 </div>
                 <div class="col-md-7 align-self-center text-right">
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="{{route('admin_hotel_add')}}" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Add Hotel </a>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Blank Page</li>
+                        </ol>
+                        <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fa fa-plus-circle"></i> Create New</button>
                     </div>
                 </div>
             </div>
@@ -33,58 +36,44 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
+                            <table id="myTable" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Total</th>
+                                    <th>Check In</th>
+                                    <th>Days</th>
+                                    <th>Ip</th>
+                                    <th>Note</th>
+                                    <th>Status</th>
+                                    <th colspan="2">Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach ($datalist as $rs)
 
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="table-responsive m-t-40">
-                                            <table id="myTable" class="table table-bordered table-striped">
-                                                <thead>
-                                                <tr>
-                                                    <th>Id</th>
-                                                    <th></th>
-                                                    <th>Name</th>
-                                                    <th>Email</th>
-                                                    <th>Phone</th>
-                                                    <th>Address</th>
-                                                    <th>Roles</th>
-                                                    <th></th>
-                                                    <th colspan="2">Actions</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                @foreach ($datalist as $rs)
+                                    <tr>
+                                        <td>{{ $rs->id }}</td>
+                                        <td>{{ $rs->name }}</td>
+                                        <td>{{ $rs->email }}</td>
+                                        <td>{{ $rs->phone }}</td>
+                                        <td>{{ $rs->total }}</td>
+                                        <td>{{ $rs->checkin }}</td>
+                                        <td>{{ $rs->days }}</td>
+                                        <td>{{ $rs->IP }}</td>
+                                        <td>{{ $rs->note }}</td>
+                                        <td>{{ $rs->status }}</td>
+                                        <td><a href="{{route('admin_reservation_show',['id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"> <img src="{{asset('assets/admin/images')}}/editicon.png" height="40" ></a></td>
 
-                                                    <tr>
-                                                        <td>{{ $rs->id }}</td>
-                                                        <td>
-                                                            @if ($rs->profile_photo_path)
-                                                                <img src="{{Storage::url($rs->profile_photo_path)}}" height="50" alt="">
-                                                            @endif
-                                                        </td>
+                                    </tr>
 
-                                                        <td>{{ $rs->name }}</td>
-                                                        <td>{{ $rs->email }}</td>
-                                                        <td>{{ $rs->phone }}</td>
-                                                        <td>{{ $rs->address }}</td>
-                                                        <td>@foreach($rs->roles as $row)
-                                                                {{$row->name}},
-                                                            @endforeach
-                                                        <a href="{{route('admin_user_roles',['id'=> $rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')"> <i class="icon-plus" style="color: blue"></i></a>
+                                @endforeach
 
-                                                        </td>
-                                                        </td>
-                                                        <td><a href="{{route('admin_user_edit',['id'=> $rs->id])}}"> <ion-icon name="create-outline"></ion-icon> <img src="{{asset('assets/admin/images')}}/editicon.png" height="40"></a></td>
-                                                        <td><a href="{{route('admin_user_delete',['id'=> $rs->id])}}" onclick="return confirm('Delete! Are you sure ?')"> <img src="{{asset('assets/admin/images')}}/deleteicon.jpg" height="40" ></a></td>
-                                                    </tr>
-
-                                                @endforeach
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -155,9 +144,7 @@
         <!-- ============================================================== -->
     </div>
 
-
 @endsection
-
 @section('footer')
     <script src="{{ asset('assets')}}/admin/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
@@ -233,7 +220,7 @@
         });
     </script>
 
-    @endsection
+@endsection
 
 
 

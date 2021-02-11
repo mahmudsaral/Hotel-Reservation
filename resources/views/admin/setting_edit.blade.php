@@ -236,7 +236,7 @@
 
 
                                                 <div class="form-actions">
-                                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Edit Hotel</button>
+                                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Edit Settings</button>
                                                     <button type="submit" class="btn btn-inverse">Cancel</button>
                                                 </div>
                                             </form>

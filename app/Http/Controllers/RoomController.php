@@ -41,8 +41,6 @@ class RoomController extends Controller
      */
     public function store(Request $request,$hotel_id)
     {
-        //
-
         $data = new Room;
         $data->title = $request->input('title');
         $data->description = $request->input('description');

@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title','Admin User')
+@section('title','Edit Reservations')
 
 @section('javascript')
 
@@ -44,75 +44,84 @@
                                     <div class="card">
 
                                         <div class="card-body">
-                                            @include('home.message')
-                                            <form action="{{route('admin_user_update',['id'=>$data->id])}}" method="post" accept-charset="" enctype="multipart/form-data">
+                                            <form action="{{route('admin_reservation_update',['id'=>$datalist->id])}}" method="post" accept-charset="" enctype="multipart/form-data">
                                                 @csrf
                                                 <div class="form-body">
-                                                    <h3 class="card-title">User Edit</h3>
+                                                    <h3 class="card-title">Reservation Detail</h3>
                                                     <hr>
                                                     <div class="row p-t-20">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Id</label>
-                                                                <input type="text" id="id" name ="id" value="{{$data->id}}"  class="form-control">
+                                                        <div class="card-body">
+                                                            @include('home.message')
+                                                            <div class="table-responsive m-t-40">
+                                                                <table id="myTable" class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>ID</th>
+                                                                        <td>{{ $datalist->id }}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <td>{{ $datalist->user->name }}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Email</th>
+                                                                        <td>{{ $datalist->email }}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Phone</th>
+                                                                        <td>{{ $datalist->phone }}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Review</th>
+                                                                        <td>{{ $datalist->total }}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Check In</th>
+                                                                        <td>{{ $datalist->checkin }}</td>
+                                                                    </tr>
+                                                                        <th>Days</th>
+                                                                        <td>{{ $datalist->days }}</td>
+                                                                    <tr>
+                                                                    </tr>
+                                                                        <th>IP</th>
+                                                                        <td>{{ $datalist->IP }}</td>
+                                                                    <tr>
+                                                                        <th>Note</th>
+                                                                        <td>{{ $datalist->note }}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Status</th>
+                                                                        <td>
+                                                                            <select name="status">
+                                                                                <option selected>{{$datalist->status}}></option>
+                                                                                <option>Accepted</option>
+                                                                                <option>Cancelled</option>
+                                                                                <option>Completed</option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="form-actions">
+                                                                                <button type="note" name="note" class="btn btn-success"> <i class="fa fa-check"></i> Update Reservation</button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                    </thead>
+
+                                                                </table>
                                                             </div>
                                                         </div>
-                                                        <!--/span-->
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Name</label>
-                                                                <input type="text" id="name" name ="name" value="{{$data->name}}"  class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <!--/span-->
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Email</label>
-                                                                <input type="text"  name ="email" value="{{$data->email}}"  class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <!--/span-->
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Phone</label>
-                                                                <input type="text"  name ="phone" value="{{$data->phone}}"  class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <!--/span-->
-                                                    </div>
-
-                                                    <!--/row-->
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Address</label>
-                                                                <input type="text"  name ="address" value="{{$data->address}}"  class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <!--/span-->
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label class="control-label">Image</label>
-                                                                <input type="file"  name ="image" class="form-control">
-                                                                @if ($data->profile_photo_path)
-                                                                    <img src="{{Storage::url($data->profile_photo_path)}}" height="30" alt="">
-                                                                @endif
-                                                            </div>
-                                                        </div>
-                                                        <!--/span-->
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="form-actions">
-                                                    <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Edit User</button>
-                                                    <button type="submit" class="btn btn-inverse">Cancel</button>
                                                 </div>
                                             </form>
+
                                         </div>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -189,6 +198,3 @@
 
 
 @endsection
-
-
-

@@ -21,7 +21,7 @@ class ReservationController extends Controller
     public function index()
     {
         $datalist = Reservation::where('user_id',Auth::id())->get();
-        return view('home',['datalist' => $datalist]);
+        return view('home.user_reservation',['datalist' => $datalist]);
     }
 
     /**
@@ -44,7 +44,7 @@ class ReservationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,$hotel_id)
+    public function store(Request $request,$id,$hotel_id)
     {
         $data = new Room;
         $data->title = $request->input('title');
@@ -52,23 +52,24 @@ class ReservationController extends Controller
         $data->price = $request->input('price');
         $data->adet = $request->input('adet');
         $data->status = $request->input('status');
-        $data->image = Storage::putFile('rooms',$request->file('image'));
-        $data->save();
-
-        $datalist = Reservation::where('user_id',Auth::id())->get();
-        foreach($datalist as $rs)
-        {
-            $data2 = new Reservation;
-            $data2->user_id=Auth::id();
-            $data2->hotel_id= $rs->hotel_id;
-            $data2->checkin = $rs->input('checkin');
-            $data2->days = $rs->input('days');
-            $data2->save();
-        }
-
-        return redirect()->route('user_hotels');
-
+        $data->image = $request->file('image');
+        $data2 = new Reservation;
+        $data2->user_id=Auth::id();
+        $data2->hotel_id=$hotel_id;
+        $data2->room_id=$id;
+        $data2->name = $request->input('name');
+        $data2->email = $request->input('email');
+        $data2->phone = $request->input('phone');
+        $data2->total = $request->input('total');
+        $data2->note = $request->input('note');
+        $data2->IP = $_SERVER['REMOTE_ADDR'];
+        $data2->checkin = $request->input('checkin');
+        $data2->days = $request->input('days');
+        $data2->save();
+        return redirect()->route('home');
     }
+
+
 
     /**
      * Display the specified resource.

@@ -1,4 +1,6 @@
-<!-- Start Header -->
+@php
+    $setting = \App\Http\Controllers\HomeController::getSetting()
+@endphp
 <header class="header">
     @section('footerjs')
         @livewireScripts
@@ -11,9 +13,7 @@
                     <div class="left-side">
                         <ul class="custom-flex">
                             <li>
-                                <a href="#" class="text-custom-white">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
+                                @if($setting->facebook != null)<a href="{{$setting->facebook}}" target="_blank"><i class="fab fa-facebook"></i></a> @endif
                             </li>
                             <li>
                                 <a href="#" class="text-custom-white">
@@ -40,7 +40,7 @@
 
                             <li class="nav-item dropdown u-pro">
                                 @auth
-                                    <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="hidden-md-down"></span> {{Auth::user()->name}},{{Auth::user()->roles->pluck('name')}} </a>
+                                    <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="hidden-md-down"></span> {{Auth::user()->name}} </a>
                                     <div class="dropdown-menu dropdown-menu-right animated flipInY">
                                         <!-- text-->
 

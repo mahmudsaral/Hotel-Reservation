@@ -22,7 +22,8 @@
         <div class="tab-content bg-custom-white bx-wrapper padding-20">
             <div class="tab-pane fade active show" id="hotel-booking">
                 <div class="tab-inner">
-                    <form action="{{route('user_reservation_store')}}" method="post" accept-charset="" enctype="multipart/form-data">
+                    <form action="{{route('user_reservation_store',['id'=>$data->id,'hotel_id'=>$data->hotel_id])}}" method="post" accept-charset="" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-8">
                                 <h5 class="text-custom-black">Your Personal Information</h5>
@@ -30,37 +31,43 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="fs-14 text-custom-black fw-500">Name</label>
-                                            <input type="text" name="#" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->name}}" required>
+                                            <input type="text" name="name" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->name}}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="fs-14 text-custom-black fw-500">Email I'd</label>
-                                            <input type="email" name="#" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->email}}" required>
+                                            <input type="email" name="email" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->email}}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="fs-14 text-custom-black fw-500">Verify Email I'd</label>
-                                            <input type="email" name="#" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->email}}" required>
+                                            <input type="email" name="" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->email}}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="fs-14 text-custom-black fw-500">Phone No.</label>
-                                            <input type="phone" name="#" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->phone}}" required>
+                                            <input type="text" name="phone" class="form-control form-control-custom" value="{{\Illuminate\Support\Facades\Auth::user()->phone}}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="fs-14 text-custom-black fw-500">Checkin Date</label>
-                                            <input type="text" name="#" class="form-control form-control-custom" value="{{$checkin}}" required>
+                                            <input type="text" name="checkin" class="form-control form-control-custom" value="{{$checkin}}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="fs-14 text-custom-black fw-500">Nights</label>
-                                            <input type="text" name="#" class="form-control form-control-custom" value="{{$days}}" required>
+                                            <input type="text" name="days" class="form-control form-control-custom" value="{{$days}}" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="fs-14 text-custom-black fw-500">Total</label>
+                                            <input type="text" name="total" value="{{$data->price* $days}}" class="form-control form-control-custom">
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -94,6 +101,13 @@
                                             <input type="text" name="#" class="form-control form-control-custom" placeholder="Card Identification Number" required>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="fs-14 text-custom-black fw-500">Note</label>
+                                            <input type="text" name="note" class="form-control form-control-custom">
+                                        </div>
+                                    </div>
+
                                     <div class="col-md-6">
                                         <div class="row">
                                             <div class="col-sm-6">
@@ -155,8 +169,8 @@
                                             <div class="hotel-grid-wrapper bx-wrapper">
                                                 <img src="{{ Storage::url($data->image)}}" height="80" width="25" alt="">
                                                 <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
-                                                    <h4 class="title fs-16"><a href="#" class="text-custom-black"> <small class="text-light-dark">{{$data->title}}</small></a></h4>
-                                                    <span class="price"><small>avg/night</small>{{$data->price*$days}}</span>
+                                                    <h4 class="title fs-16"><a href="#" class="text-custom-black"> <small name="title" class="text-light-dark">{{$data->title}}</small></a></h4>
+                                                    <span class="price" ><small name="total">avg/night</small>{{$data->price* $days}}</span>
                                                     <div class="feedback">
                                                         <div class="ratings">
                                                             <span class="text-yellow fs-12"><i class="fas fa-star"></i></span>

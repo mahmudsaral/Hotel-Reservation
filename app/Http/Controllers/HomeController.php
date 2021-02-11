@@ -75,6 +75,12 @@ class HomeController extends Controller
         return view('home.hotel_detail',['data'=> $data,'datalist'=> $datalist,'reviews'=> $reviews,'rooms'=> $rooms,'reservations'=>$reservations]);
 
     }
+
+    public function hotellist($search)
+    {
+        $datalist = Hotel::where('title','like','%'.$search.'%')->get();
+        return view('home.search_jobs',['search'=>$search,'datalist'=>$datalist]);
+    }
     public function reservation($id)
     {
         $data = Hotel::find($id);
@@ -97,9 +103,10 @@ class HomeController extends Controller
        /* $search=$request->input('search');
         $count = Hotel::where('title','like','%'.$search.'%')->get()->count();*/
         $data = Hotel::where('title',$request->input('search'))->first();
-        return redirect()->route('hotel',['id'=>$data->id,'slug'=>$data->slug]);
+        return redirect()->route('hotel',['id' => $data->id,'slug' => $data->slug]);
 
     }
+
 
     public function sendmessage(Request $request)
     {

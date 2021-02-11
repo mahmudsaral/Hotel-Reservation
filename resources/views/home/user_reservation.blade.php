@@ -1,5 +1,5 @@
 @extends('layouts.home2')
-@section('title','My Reviews')
+@section('title','My Reservation')
 
 
 @section('content')
@@ -15,7 +15,7 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h4 class="text-themecolor">Reviews</h4>
+                    <h4 class="text-themecolor">Reservations</h4>
                 </div>
             </div>
             <!-- ============================================================== -->
@@ -37,13 +37,14 @@
                                             <tr>
                                                 <th>Id</th>
                                                 <th>Name</th>
-                                                <th>Hotels</th>
-                                                <th>Subject</th>
-                                                <th>Review</th>
-                                                <th>Rate</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Total</th>
+                                                <th>Check In</th>
+                                                <th>Days</th>
+                                                <th>Ip</th>
+                                                <th>Note</th>
                                                 <th>Status</th>
-                                                <th>Date</th>
-                                                <th class="text-nowrap">Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -51,20 +52,17 @@
                                             @foreach ($datalist as $rs)
 
                                                 <tr>
-                                                    <td>{{$rs->id}}</td>
-                                                    <td>{{$rs->user->name}}</td>
-                                                    <td>
-                                                        <a href="{{route('hotel',['id'=>$rs->hotel->id,'slug'=>$rs->hotel->slug])}}">{{$rs->hotel->title}}</a>
-                                                    </td>
-                                                    <td>{{$rs->subject}}</td>
-                                                    <td>{{$rs->review}}</td>
-                                                    <td>{{$rs->rate}}</td>
-                                                    <td>{{$rs->status}}</td>
-                                                    <td>{{$rs->created_at}}</td>
-                                                    <td>
-                                                        <a href="{{route('user_review_delete',['id'=>$rs->id])}}">
-                                                            DELETE
-                                                        </a>
+                                                    <td>{{ $rs->id }}</td>
+                                                    <td>{{ $rs->name }}</td>
+                                                    <td>{{ $rs->email }}</td>
+                                                    <td>{{ $rs->phone }}</td>
+                                                    <td>{{ $rs->total }}</td>
+                                                    <td>{{ $rs->checkin }}</td>
+                                                    <td>{{ $rs->days }}</td>
+                                                    <td>{{ $rs->IP }}</td>
+                                                    <td>{{ $rs->note }}</td>
+                                                    <td>{{ $rs->status }}</td>
+
                                                 </tr>
 
                                             @endforeach
